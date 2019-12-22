@@ -1,3 +1,41 @@
+html,
+body {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
 h1 {
     font-size: 2em;
+}
+
+.container {
+    position: relative;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.top-left {
+    font-size: 0.8em;
+    color: white;
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    height: 30%;
+}
+
+/* Helferklassen */
+
+.yellow {
+    background-color: yellow;
+}
+
+.red {
+    background-color: red;
 }
