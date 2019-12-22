@@ -54,19 +54,15 @@ h1 {
     grid-area: image-part;
 }
 
-@media screen and (max-width: 50em) {
-    .grid-container {
-        grid-template-areas:
-            "image-area"
-            "text-area";
-        grid-template-columns: unset;
-    }
+@media screen and (max-width: 840px) {
 
-    .grid-container-reversed {
+    .grid-container-reversed,
+    .grid-container {
+        grid-template-columns: unset;
         grid-template-areas:
             "image-area"
             "text-area";
-        grid-template-columns: unset;
+        grid-template-rows: auto auto;
     }
 
     .text-part {
