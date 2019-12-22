@@ -21,6 +21,22 @@ h1 {
     font-size: 2em;
 }
 
+.image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.text-on-image {
+    position: absolute;
+    line-height: 1.75;
+    font-size: 300%;
+    font-family: 'Lobster', cursive;
+    top: 5%;
+    right: 16px;
+    width: 45%;
+}
+
 .grid-container {
     height: 100%;
 
@@ -48,7 +64,7 @@ h1 {
     text-align: center;
     line-height: 1.75;
     font-size: 150%;
-    background-color: black;
+    background-color: #c54245;
     color: white;
     padding: 5%;
 
@@ -71,7 +87,11 @@ h1 {
     }
 
     .text-part {
-        font-size: 100%;
+        font-size: 120%;
+    }
+
+    .text-on-image {
+        font-size: 120%;
     }
 }
 
