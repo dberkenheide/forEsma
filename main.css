@@ -4,30 +4,50 @@ body {
     height: 100%;
 }
 
+body {
+    grid-template-rows: auto auto;
+}
+
 img {
     width: 100%;
     height: auto;
-}
-
-h1 {
-    font-size: 2em;
-}
-
-.container {
-    position: relative;
 }
 
 .full-height {
     height: 100%;
 }
 
-.top-left {
-    font-size: 0.8em;
+h1 {
+    font-size: 2em;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 66.6666% auto;
+}
+
+.image-text {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.75;
+    font-size: 150%;
+    background-color: black;
     color: white;
-    position: absolute;
-    top: 8px;
-    left: 16px;
-    height: 30%;
+    padding: 5%;
+}
+
+@media screen and (max-width: 50em) {
+    .grid-container {
+        grid-template-columns: auto;
+        grid-template-rows: 66.6666% auto;
+    }
+
+    .image-text {
+        font-size: 100%;
+    }
 }
 
 /* Helferklassen */
