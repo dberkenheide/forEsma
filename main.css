@@ -23,7 +23,16 @@ h1 {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 66.6666% auto;
+    grid-template-areas:
+        "image-area text-area";
+    grid-template-columns: 66.6666% 1fr;
+}
+
+.grid-container-reversed {
+    display: grid;
+    grid-template-areas:
+        "text-area image-area";
+    grid-template-columns: 1fr 66.6666%;
 }
 
 .text-part {
@@ -37,12 +46,27 @@ h1 {
     background-color: black;
     color: white;
     padding: 5%;
+
+    grid-area: text-area;
+}
+
+.image-part {
+    grid-area: image-part;
 }
 
 @media screen and (max-width: 50em) {
     .grid-container {
-        grid-template-columns: auto;
-        grid-template-rows: 66.6666% auto;
+        grid-template-areas:
+            "image-area"
+            "text-area";
+        grid-template-columns: unset;
+    }
+
+    .grid-container-reversed {
+        grid-template-areas:
+            "image-area"
+            "text-area";
+        grid-template-columns: unset;
     }
 
     .text-part {
