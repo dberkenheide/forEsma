@@ -22,6 +22,8 @@ h1 {
 }
 
 .grid-container {
+    height: 100%;
+
     display: grid;
     grid-template-areas:
         "image-area text-area";
@@ -29,6 +31,8 @@ h1 {
 }
 
 .grid-container-reversed {
+    height: 100%;
+
     display: grid;
     grid-template-areas:
         "text-area image-area";
@@ -40,6 +44,7 @@ h1 {
 
     align-items: center;
     justify-content: center;
+
     text-align: center;
     line-height: 1.75;
     font-size: 150%;
@@ -62,11 +67,11 @@ h1 {
         grid-template-areas:
             "image-area"
             "text-area";
-        grid-template-rows: auto auto;
+        grid-template-rows: auto 1fr;
     }
 
     .text-part {
-        font-size: 90%;
+        font-size: 100%;
     }
 }
 
