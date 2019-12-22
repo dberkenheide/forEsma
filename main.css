@@ -26,7 +26,7 @@ h1 {
     grid-template-columns: 66.6666% auto;
 }
 
-.image-text {
+.text-part {
     display: flex;
 
     align-items: center;
@@ -45,8 +45,8 @@ h1 {
         grid-template-rows: 66.6666% auto;
     }
 
-    .image-text {
-        font-size: 100%;
+    .text-part {
+        font-size: 90%;
     }
 }
 
