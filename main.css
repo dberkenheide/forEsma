@@ -106,6 +106,7 @@ h1 {
             "image-area"
             "text-area";
         grid-template-rows: auto 1fr;
+        display: inline;
     }
 
     .image-container {
